@@ -1,0 +1,68 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+    <link type="text/css" href="{% static 'main/css/indexStyle.css' %}" rel="stylesheet"/>
+    
+    <div class="indexBlock">
+        <div class="mainText">
+            <div class="block">
+                <img class="circle1" src="{% static 'main\images\Circle.svg' %}"  alt="img_circle">
+                <div class="textFirst">
+                    <p class="IndexTitle">У нас вы сможете: </p>
+                    <p class="IndexText">Отдохнуть и пообщаться</p>
+                    <p class="IndexText">со своим питомцем</p>
+                </div>
+                
+                <img class="img_first" src="{% static 'main\images\17Index_image.svg' %}" alt="img_dog" >
+            </div>
+
+            <div class="block">
+                
+                
+                <img class="img_second" src="{% static 'main\images\16Index_image.svg' %}" alt="img_dog" >
+
+                <div class="textSecond">
+                    <p class="IndexTitle">Узнать что-то новое: </p>
+                    <p class="IndexText">-Послушание</p>
+                    <p class="IndexText">-Уход и содержание</p>
+                    <p class="IndexText">-Подготовка к выстовкам</p> 
+                    <p class="IndexText">-Правильное обращение с собакой</p>
+                </div>
+                <img class="circle2" src="{% static 'main\images\Circle.svg' %}"  alt="img_circle">
+            </div>
+
+            <div class="block">
+                
+                
+                <div class="textThird">
+                    <p class="IndexTitle">Зачем заниматься с собакой?</p>
+                    <p class="IndexText">Тренировки с собакой улучшают:</p>
+                    <p class="IndexText">-Ее физическую форму</p>
+                    <p class="IndexText">-Повышают ее умственную активность</p>
+                    <p class="IndexText">-Укрепляют связь между собакой и ее владельцем</p>
+                    <p class="IndexText">-Уменьшают уровень стресса и повышают уверенность в себе.</p>
+                </div>
+                <img class="circle3" src="{% static 'main\images\Circle.svg' %}"  alt="img_circle">
+                <img class="img_third" src="{% static 'main\images\15Index_image.svg' %}" alt="img_dog" >
+            </div>
+
+            <div class="lastBlock">
+                
+
+                <div class="textLast">
+                    <p class="IndexTitle"> Так же общение с собакой поможет и Вам!</p>
+                    <p class="IndexText">-Улучшит эмоциональное состояние и настроение</p>
+                    <p class="IndexText">-Повысит ответственность и организованность</p>
+                    <p class="IndexText">-Улучшит здоровье путем снижения уровня стресса.</p>
+                </div>
+                
+            </div>
+            <div class="IndexBtnTitle"><a class="textBtn" href="#">Записаться</a></div>
+        </div>
+
+        
+
+    </div>
+
+    
+{% endblock %}

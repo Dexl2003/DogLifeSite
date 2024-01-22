@@ -1,0 +1,93 @@
+    Body{    
+        background-color: #93ac67;
+    }
+    .mainMenu{
+        background-color: #ecce80;
+    }
+
+    .backImg{
+        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+        clip-path: inset(1px 0 -40px 0); 
+        transform: translateY(-2px);
+    }
+
+    .ServBlock{
+        display: grid;
+        padding-top: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
+        
+    }
+
+    .groupBlock{
+        width: 100%;
+        margin: 2%;
+    }
+
+    .priceBlock{
+        display: block;
+        background-color: #ecce80;
+        border-radius: 20px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .ServTitle{
+        pointer-events: none;
+        width: 100%;
+        font-size: 140%;
+        font-weight: 500 ;
+        font-stretch: 25% ;
+        white-space: nowrap;
+        margin: 0;
+        margin-bottom: 1%;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    
+
+    .mainText{
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+
+    .block{
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    @media screen and (min-width: 900px) {
+        .ServText{
+            font-size: 120%;
+            width: 100%;
+            pointer-events: none;
+            white-space: wrap;
+            font-weight: 500 ;
+            font-stretch: 100% ;
+            margin: 0;
+            padding-left: 2%;
+            color: black;
+        }
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 900px) {
+        .ServText{
+            font-size: 120%;
+            width: 100%;
+            pointer-events: none;
+            white-space: wrap;
+            font-weight: 500 ;
+            font-stretch: 100% ;
+            margin: 0;
+            padding-left: 4%;
+            color: black;
+        }
+    }
+
+   

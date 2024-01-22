@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>{{title}}</title>
+        
+
+    {% load static %}
+    <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet"/>
+    <link rel="shortcut icon" href="{% static 'main\images\DogLive_Logo.svg' %}"/>
+    
+    
+    <script src="{% static 'main/js/script.js' %}"></script>
+    
+    
+
+</head>
+<body>
+    {% block mainmenu %}
+    <div class="mainMenu">
+        <div class="logo">
+            <img class="img_Logo"  /> 
+        </div>
+        
+        <div class="nav">
+            <div id="Button-menu" onclick="toggleDropdown()" >
+                <span class="bar" ></span>
+                <span class="bar" ></span>
+                <span class="bar" ></span>
+            </div>
+            
+            <ul id="menuList" class="nav-menu">
+                {% for m in menu %}
+                    {% if not forloop.last %}
+                        <li><a href="{% url m.url_name %}">{{m.title}}</a></li>
+                    {% else %}
+                        <li><a class="login" href="{% url m.url_name %}">{{m.title}}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <button alt="upButton" onclick="scrollToTop()" id="scrollBtn"><img class="arrowUp" src="{% static 'main\images\28UpButtonPointer.svg' %}"  alt="img_up_arrow"></button>
+    
+    {% endblock mainmenu %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block footer %}
+    
+
+         <footer class="footer">
+            <div class="blockFooter">
+                <div class="lineFooter">
+                    <div class="cynologit">
+                        <p class="title">Информация для кинологов</p>
+                        <p class="text">Если вы кинолог и хотели бы работать на нас</p>
+                        <p class="text">Звоните: 8 924 399 59 87</p>
+                        <p class="text">Пишите: karpova30051975@gmail.com</p>
+                    </div>
+
+                    <div class="contacts">
+                        <p class="title">Контакты</p>
+                        <p class="text">Имя: Ирина</p>
+                        <p class="text">Телефон: 8 924 399 59 87</p>
+                        <p class="text">Эл.почта: karpova30051975@gmail.com</p>
+                        <p class="text">Адрес: г.Улан-удэ</p>
+                        <p class="text"> Ботаническая 71к9</p>
+                    </div>
+
+                    <div class="map">
+                        
+                        <iframe class="yandex" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=169129870207" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+
+                <div class="social">
+                    <p class="title">Социальные сети</p>
+                    <div class="social_icon">
+                        <a class="image-container" href="https://vk.com/dog_live_03" target="_blank">
+                            <img class="img_social" src="{% static 'main\images\Logo_vk.svg' %}" alt="VK" >
+                        </a>
+                        <!-- <a class="image-container" href="#" target="_blank">
+                            <img class="img_social" src="{% static 'main\images\Logo_tt.svg' %}" alt="tiktok" >
+                        </a>
+                        <a class="image-container" href="#" target="_blank">
+                            <img class="img_social" src="{% static 'main\images\Logo_inst.svg' %}" alt="instagram" >
+                        </a> -->
+                    </div>
+                </div>
+                
+                
+                <div class="copyright"><p class="textCopy">Copyright © 2021-2024 Dog Live. Все права защищены.</p></div>
+                
+            </div>
+         </footer>
+    {% endblock footer%}
+</body>
+</html>

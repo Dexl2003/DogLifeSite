@@ -1,0 +1,350 @@
+
+
+
+@media screen and (min-width: 700px){
+    
+
+    .IndexTitle{
+        pointer-events: none;
+        width: 100%;
+        font-size: 140%;
+        font-weight: 500 ;
+        font-stretch: 25% ;
+        white-space: nowrap;
+        margin: 0;
+        margin-bottom: 1%;
+        text-transform: uppercase;
+        color: black;
+    }
+    
+    .IndexText{
+        font-size: 120%;
+        width: 100%;
+        pointer-events: none;
+        white-space: wrap;
+        font-weight: 500 ;
+        font-stretch: 100% ;
+        margin: 0;
+        padding-left: 4%;
+        color: #286340;
+    }
+    
+    .mainText{
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    
+    .block{
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .circle1{
+        width: 30%;
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        z-index: -1;
+    }
+    
+    .circle2{
+        width: 30%;
+        position: absolute;
+        top: 50px;
+        right: 315px;
+        z-index: -1;
+    }
+    
+    .circle3{
+        width: 30%;
+        position: absolute;
+        top: -7px;
+        left: -100px;
+        z-index: -1;
+    }
+    
+    .textFirst{
+        display: block;
+        
+        white-space: wrap;
+        margin: 5%;
+    }
+    .img_first{
+        margin: 5%;
+        width: 30%;
+        display: inline-flex;
+        
+        min-width: 200px;
+    }
+    
+    
+    .textSecond{
+        display: block;
+        
+        white-space: wrap;
+        margin: 5%;
+    }
+    .img_second{
+        margin: 10% 6%;
+        width: 30%;
+        display: inline-flex;
+        
+        min-width: 200px;
+    }
+    
+    
+    .textThird{
+        display: block;
+        
+        white-space: nowrap;
+        margin: 5%;
+    }
+    .img_third{
+        margin: 12% 6%;
+    
+        width: 50%;
+        display: inline-flex;
+        
+        min-width: 230px;
+    }
+    
+    .lastBlock{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .textLast{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+    .textLast .IndexTitle{
+        text-align: center;
+    }
+    
+    .textLast .IndexText{
+        padding: 0;
+        text-align: center;
+    }
+    
+    .btn_last{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3%;
+        
+    }
+    
+    .IndexBtnTitle {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .textBtn{
+        background-color: #94ad68;
+        padding: 1%;
+    
+        width: 100%;
+        font-size: 140%;
+        font-weight: 500 ;
+        font-stretch: 25% ;
+        border-radius: 10px;
+        user-select: none;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .IndexBtnTitle .textBtn:hover {
+        background-color: #286340;
+    }
+
+}
+
+@media screen and (max-width: 699.9px){
+    .IndexTitle{
+        pointer-events: none;
+        width: 100%;
+        font-size: 140%;
+        font-weight: 500 ;
+        font-stretch: 25% ;
+        white-space: wrap;
+        margin: 0;
+        margin-bottom: 1%;
+        text-transform: uppercase;
+        color: black;
+    }
+    
+    .IndexText{
+        font-size: 120%;
+        width: 100%;
+        pointer-events: none;
+        white-space: wrap;
+        text-wrap: wrap;
+        font-weight: 500 ;
+        font-stretch: 100% ;
+        margin: 0;
+        padding-left: 4%;
+        color: #286340;
+    }
+    
+    .mainText{
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    
+    .block{
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .circle1{
+        width: 30%;
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        z-index: -1;
+    }
+    
+    .circle2{
+        width: 30%;
+        position: absolute;
+        top: 50px;
+        right: 315px;
+        z-index: -1;
+    }
+    
+    .circle3{
+        width: 30%;
+        position: absolute;
+        top: -7px;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .textFirst{
+        display: block;
+        
+        white-space: wrap;
+        margin: 5%;
+    }
+    .img_first{
+        margin: 5%;
+        width: 30%;
+        display: inline-flex;
+        
+        min-width: 200px;
+    }
+    
+    
+    .textSecond{
+        display: block;
+        
+        white-space: wrap;
+        margin: 5%;
+    }
+    .img_second{
+        margin: 10% 6%;
+        width: 30%;
+        display: inline-flex;
+        
+        min-width: 200px;
+    }
+    .img_second:nth-child(1){
+        order: 2;
+    }
+    
+    .textThird{
+        display: block;
+        
+        white-space: nowrap;
+        margin: 5%;
+    }
+    .img_third{
+        margin: 12% 6%;
+    
+        width: 50%;
+        display: inline-flex;
+        
+        min-width: 230px;
+    }
+    
+    .lastBlock{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .textLast{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        
+    }
+    
+    .textLast .IndexTitle{
+        text-align: center;
+        text-wrap: wrap;
+    }
+    
+    .textLast .IndexText{
+        padding: 0;
+        text-align: center;
+        text-wrap: wrap;
+    }
+    
+    .btn_last{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3%;
+        
+    }
+    
+    .IndexBtnTitle {
+        margin-top: 5%;
+        margin-bottom: 3%;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .textBtn{
+        background-color: #94ad68;
+        padding: 2%;
+    
+        width: 100%;
+        font-size: 140%;
+        font-weight: 500 ;
+        font-stretch: 25% ;
+        border-radius: 10px;
+        user-select: none;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .IndexBtnTitle .textBtn:hover {
+        background-color: #286340;
+    }
+}
